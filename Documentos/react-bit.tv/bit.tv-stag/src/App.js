@@ -45,7 +45,7 @@ const App = () => {
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
-  }, [channels]);
+  }, [channels, handleChannelSelect]);
 
   return (
     <div>
