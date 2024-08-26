@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ChannelList from "./components/ChannelList";
 import VideoPlayer from "./components/VideoPlayer";
-import "./styles.css";
+import "./styles/styles.css";
 
 const App = () => {
   const [channels, setChannels] = useState([
