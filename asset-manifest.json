@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/bit.tv-stag-react/static/css/main.37b00fea.css",
-    "main.js": "/bit.tv-stag-react/static/js/main.aeea6af5.js",
+    "main.js": "/bit.tv-stag-react/static/js/main.f7194ad2.js",
     "index.html": "/bit.tv-stag-react/index.html",
     "main.37b00fea.css.map": "/bit.tv-stag-react/static/css/main.37b00fea.css.map",
-    "main.aeea6af5.js.map": "/bit.tv-stag-react/static/js/main.aeea6af5.js.map"
+    "main.f7194ad2.js.map": "/bit.tv-stag-react/static/js/main.f7194ad2.js.map"
   },
   "entrypoints": [
     "static/css/main.37b00fea.css",
-    "static/js/main.aeea6af5.js"
+    "static/js/main.f7194ad2.js"
   ]
 }
