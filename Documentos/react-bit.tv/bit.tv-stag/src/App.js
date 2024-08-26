@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import ChannelList from "./components/ChannelList";
 import VideoPlayer from "./components/VideoPlayer";
 import "./styles/styles.css";
@@ -12,14 +12,17 @@ const App = () => {
 
   const [currentChannelIndex, setCurrentChannelIndex] = useState(0);
 
-  const handleChannelSelect = (index) => {
-    const updatedChannels = channels.map((channel, i) => ({
-      ...channel,
-      isSelected: i === index,
-    }));
-    setChannels(updatedChannels);
-    setCurrentChannelIndex(index);
-  };
+  const handleChannelSelect = useCallback(
+    (index) => {
+      const updatedChannels = channels.map((channel, i) => ({
+        ...channel,
+        isSelected: i === index,
+      }));
+      setChannels(updatedChannels);
+      setCurrentChannelIndex(index);
+    },
+    [channels]
+  );
 
   useEffect(() => {
     const handleKeyDown = (e) => {
